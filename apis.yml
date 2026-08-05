@@ -1,8 +1,18 @@
 aid: pattern-bioscience
 name: Pattern Bioscience
-description: 'Pattern Bioscience is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'Pattern Bioscience is a privately held in vitro diagnostics company founded
+  in 2016 and headquartered in Austin, Texas, developing a culture-free Single-Cell Microbiology
+  system for rapid bacterial identification and antibiotic susceptibility testing (ID/AST).
+  The platform isolates individual bacterial cells in picoliter-scale droplets and reads the
+  metabolic patterns those cells produce over time, using machine learning to identify the
+  pathogen and determine phenotypic susceptibility in hours instead of the days a culture
+  workflow requires. The company holds FDA Breakthrough Device Designation for its Pneumonia
+  Action Panel, raised $43M in Series D financing in November 2025 to pursue FDA clearance,
+  and is backed by Illumina Ventures, Omnimed Capital, CARB-X, the AMR Action Fund and a
+  $22.5M BARDA contract. Pattern is pre-commercial: it publishes a marketing and news site at
+  pattern.bio and no public API, developer portal, SDK or machine-readable specification.'
 url: https://raw.githubusercontent.com/api-evangelist/pattern-bioscience/refs/heads/main/apis.yml
+image: https://pattern.bio/wp-content/uploads/2019/10/PatternLogo_black.svg
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +22,15 @@ created: '2026-08-04'
 modified: '2026-08-04'
 tags:
 - Company
+- Diagnostics
+- Healthcare
+- Medical Devices
+- In Vitro Diagnostics
+- Microbiology
+- Antimicrobial Resistance
+- Life Sciences
+- Machine Learning
+- Austin
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +38,68 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/pattern-bioscience-domain-security.yml
+- type: LLMsTxt
+  url: llms/pattern-bioscience-llms.txt
 - type: Website
+  url: https://pattern.bio/
+- type: About
+  url: https://pattern.bio/about-us/
+- type: Technology
+  url: https://pattern.bio/our-tech/
+- type: Science
+  url: https://pattern.bio/our-science/
+- type: Blog
+  url: https://pattern.bio/blog/
+- type: BlogRSS
+  url: https://pattern.bio/feed/
+- type: News
+  url: https://pattern.bio/news/
+- type: Support
+  url: https://pattern.bio/contact-us/
+- type: Careers
+  url: https://pattern.bio/join-us/
+- type: Glossary
+  url: https://pattern.bio/glossary/
+- type: TermsOfService
+  url: https://pattern.bio/legal/
+- type: PrivacyPolicy
+  url: https://pattern.bio/privacy-policy/
+- type: Newsletter
+  url: https://pattern.bio/sign-up/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/patternbio
+- type: Crunchbase
+  url: https://www.crunchbase.com/organization/pattern-bioscience
+- type: SecondaryMarket
   url: https://forgeglobal.com/pattern-bioscience_stock/
+x-enrichment:
+  date: '2026-08-04'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Pattern Bioscience is a pre-commercial in vitro diagnostics manufacturer whose product is a
+    physical Single-Cell Microbiology instrument and test panel awaiting FDA clearance; pattern.bio
+    is a twelve-page WordPress marketing site where /api, /docs, /developers, /openapi.json and
+    every /.well-known/ path return 404 and no api., app., docs. or developer. subdomain resolves
+    in DNS.
+  evidence:
+  - url: https://pattern.bio/developers
+    status: 404
+  - url: https://pattern.bio/openapi.json
+    status: 404
+  - url: https://pattern.bio/.well-known/agent-card.json
+    status: 404
+  - url: https://pattern.bio/.well-known/security.txt
+    status: 404
+  - url: https://pattern.bio/llms.txt
+    status: 404
+  - url: https://pattern.bio/sitemap.xml
+    status: 200
+  checked: '2026-08-04'
+

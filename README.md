@@ -42,5 +42,9 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Pattern Bioscience is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
+Pattern Bioscience is a privately held in vitro diagnostics company founded in 2016 and headquartered in Austin, Texas, developing a culture-free Single-Cell Microbiology system for rapid bacterial identification and antibiotic susceptibility testing (ID/AST). Individual bacterial cells are isolated in picoliter-scale droplets and their metabolic patterns are read over time, with machine learning used to identify the pathogen and determine phenotypic susceptibility in hours rather than the days a culture workflow requires. The company holds FDA Breakthrough Device Designation for its Pneumonia Action Panel and raised $43M in Series D financing in November 2025 to pursue FDA clearance.
+
+**No public API surface.** As of 2026-08-04 Pattern Bioscience is pre-commercial and publishes no public API, developer portal, SDK, webhook surface or machine-readable specification. `/api`, `/docs`, `/developers`, `/openapi.json`, `/llms.txt` and every `/.well-known/` path on pattern.bio return 404, and no `api.`, `app.`, `docs.` or `developer.` subdomain resolves in DNS.
+
+- https://pattern.bio/
 - https://forgeglobal.com/pattern-bioscience_stock/
