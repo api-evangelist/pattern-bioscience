@@ -12,6 +12,17 @@ description: 'Pattern Bioscience is a privately held in vitro diagnostics compan
   $22.5M BARDA contract. Pattern is pre-commercial: it publishes a marketing and news site at
   pattern.bio and no public API, developer portal, SDK or machine-readable specification.'
 url: https://raw.githubusercontent.com/api-evangelist/pattern-bioscience/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://pattern.bio/wp-content/uploads/2019/10/PatternLogo_black.svg
 x-type: company
 x-source: harvest:secondary-market
